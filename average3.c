@@ -21,17 +21,17 @@ int main()
                 z=b;
             }
         }
-    }else if(b<c)
+    }else if(b<c&&b<a)
     {
-        x=a;
+        x=b;
         if(c<a)
         {
-            y=b;
-            z=c;
+            y=c;
+            z=a;
         }else
         {
-            y=c;
-            z=b;
+            y=a;
+            z=c;
         }
     }else
     {
