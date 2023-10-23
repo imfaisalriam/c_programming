@@ -5,12 +5,12 @@ int main()
     double x,y,z;
     scanf("%lf %lf %lf",&a,&b,&c);
 
-    if(a<b&&a<c)
+    if(a<=b&&a<=c)
     {
-        if(a<c)
+        if(a<=c)
         {
             x=a;
-            if(b<c)
+            if(b<=c)
             {
                 y=b;
                 z=c;
@@ -20,10 +20,10 @@ int main()
                 z=b;
             }
         }
-    }else if(b<c&&b<a)
+    }else if(b<=c&&b<=a)
     {
         x=b;
-        if(c<a)
+        if(c<=a)
         {
             y=c;
             z=a;
@@ -35,7 +35,7 @@ int main()
     }else
     {
         x=c;
-        if(b<a)
+        if(b<=a)
         {
             y=b;
             z=a;
