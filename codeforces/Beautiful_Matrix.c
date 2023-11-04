@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include<math.h>
+#include<stdlib.h>
 int main()
 {
     int row_for_one, col_for_one;
@@ -19,7 +21,7 @@ int main()
     }
     int row_diff = middle_row - row_for_one;
     int col_diff = middle_col - col_for_one;
-    int total_step = row_diff + col_diff;
+    int total_step = abs(row_diff) +  abs(col_diff);
 
     printf("%d", total_step);
 
