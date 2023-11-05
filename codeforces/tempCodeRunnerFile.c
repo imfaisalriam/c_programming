@@ -3,9 +3,8 @@
 int main()
 {
     char math[100];
-    scanf("%99s", math);
+    scanf("%s", math);
     int len =strlen(math);
-    //printf("%d",len);
     for (int i = 0; i < len - 1; i += 2)
     {
         for (int j = 0; j < len; j += 2)
@@ -19,7 +18,7 @@ int main()
         }
     }
     
-        for (int i = 0; i < len; i++)
+        for (int i = 0; i <7; i++)
         {
             printf("%c", math[i]);
         }
