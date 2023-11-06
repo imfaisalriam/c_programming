@@ -5,31 +5,20 @@
                     Mawlana Bhasani Science and Technology University,Tangail,Bangladesh.
 ============================================================================================================
 */
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
 int main()
 {
-    char berland[100];
-    char birland[100];
-    scanf("%s", berland);
-    scanf("%s", birland);
-    int len = strlen(birland);
+    int k,n,w,sum=0;
+    scanf("%d %d %d",&k,&n,&w);
 
-    for (int i = 0; i < len/2; i++)
+    for (int i = 1; i <= w; i++)
     {
-        char temp = birland[i];
-        birland[i] = birland[len - 1-i];
-        birland[len - 1-i] = temp;
+        sum+=i*k;
     }
-
-    if (strcmp(berland, birland) == 0)
-    {
-        printf("YES");
-    }else
-    {
-        printf("NO");
-    }
+    int borrow=(sum>n) ? sum-n: 0 ;
+    printf("%d",borrow);
     
+
 
     return 0;
 }

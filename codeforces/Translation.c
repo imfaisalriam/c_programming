@@ -9,18 +9,11 @@
 #include <string.h>
 int main()
 {
-    char berland[100];
-    char birland[100];
+    char berland[1000];
+    char birland[1000];
     scanf("%s", berland);
     scanf("%s", birland);
-    int len = strlen(birland);
-
-    for (int i = 0; i < len/2; i++)
-    {
-        char temp = birland[i];
-        birland[i] = birland[len - 1-i];
-        birland[len - 1-i] = temp;
-    }
+    strrev(birland);
 
     if (strcmp(berland, birland) == 0)
     {

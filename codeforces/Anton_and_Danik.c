@@ -5,31 +5,37 @@
                     Mawlana Bhasani Science and Technology University,Tangail,Bangladesh.
 ============================================================================================================
 */
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
 int main()
 {
-    char berland[100];
-    char birland[100];
-    scanf("%s", berland);
-    scanf("%s", birland);
-    int len = strlen(birland);
-
-    for (int i = 0; i < len/2; i++)
+    int n;
+    int count_A=0,count_D=0;
+    scanf("%d",&n);
+    char game[n];
+    scanf("%s",game);
+    for (int i = 0; i < n; i++)
     {
-        char temp = birland[i];
-        birland[i] = birland[len - 1-i];
-        birland[len - 1-i] = temp;
+        if (game[i]=='A')
+        {
+            count_A++;
+        }else
+        {
+            count_D++;
+        }
+        
     }
-
-    if (strcmp(berland, birland) == 0)
+    if (count_A>count_D)
     {
-        printf("YES");
+        printf("Anton");
+    }else if(count_A<count_D)
+    {
+        printf("Danik");
     }else
     {
-        printf("NO");
+        printf("Friendship");
     }
     
+
 
     return 0;
 }
