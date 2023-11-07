@@ -8,33 +8,25 @@
 #include<stdio.h>
 int main()
 {
-    int n,passenger=0;
-    scanf("%d",&n);
-    int capacity[n];
-    int a[n],b[n];
-    for (int i = 0; i < n; i++)
+    int n,t;
+    scanf("%d %d",&n,&t);
+    char queue[n];
+    scanf("%s",&queue);
+
+    for (int i = 0; i < t; i++)
     {
-        scanf("%d %d",&a[i],&b[i]);
-        passenger+=(b[i]-a[i]);
-        capacity[i]=passenger;
-    }
-    
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = i+1; j < n; j++)
+        for (int j = 0; j < n; j++)
         {
-            if (capacity[i]>capacity[j])
+            if (queue[j]=='B'&&queue[j+1]=='G')
             {
-                int temp=capacity[i];
-                capacity[i]=capacity[j];
-                capacity[j]=temp;
+                char temp = queue[j];
+                queue[j]=queue[j+1];
+                queue[j+1]=temp;
+                j++;
             }
-            
         }
-        
     }
-    printf("%d",capacity[n-1]);
-    
+    printf("%s",queue);
 
 
     return 0;

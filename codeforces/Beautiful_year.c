@@ -8,32 +8,37 @@
 #include<stdio.h>
 int main()
 {
-    int n,passenger=0;
-    scanf("%d",&n);
-    int capacity[n];
-    int a[n],b[n];
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d %d",&a[i],&b[i]);
-        passenger+=(b[i]-a[i]);
-        capacity[i]=passenger;
-    }
+    int year;
+    scanf("%d",&year);
     
-    for (int i = 0; i < n; i++)
+    while (1)
     {
-        for (int j = i+1; j < n; j++)
+        year++;
+        int num[10]={0};
+        int temp=year;
+        int count=1;
+
+        while (temp>0)
         {
-            if (capacity[i]>capacity[j])
+            int digit = temp%10;
+            if (num[digit]>0)
             {
-                int temp=capacity[i];
-                capacity[i]=capacity[j];
-                capacity[j]=temp;
+                count=0;
+                break;
             }
+            num[digit]=1;
+            temp=temp/10;
             
         }
+
+        if (count)
+        {
+            printf("%d",year);
+            break;
+        }
+        
         
     }
-    printf("%d",capacity[n-1]);
     
 
 
