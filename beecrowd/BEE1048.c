@@ -20,7 +20,7 @@ int main()
 
         printf("Novo salario: %.2f\n",incrised_salary);
         printf("Reajuste ganho: %.2f\n",incriment);
-        printf("Em percentual: %.0f %%",readjustment_rate);
+        printf("Em percentual: %.0f %%\n",readjustment_rate);
     }else if(current_salary>800.00&&current_salary<=1200.00)
     {
         float readjustment_rate=10;
@@ -29,7 +29,7 @@ int main()
 
         printf("Novo salario: %.2f\n",incrised_salary);
         printf("Reajuste ganho: %.2f\n",incriment);
-        printf("Em percentual: %.0f %%",readjustment_rate);
+        printf("Em percentual: %.0f %%\n",readjustment_rate);
     }else if(current_salary>1200.00&&current_salary<=2000.00)
     {
         float readjustment_rate=7;
@@ -38,7 +38,7 @@ int main()
 
         printf("Novo salario: %.2f\n",incrised_salary);
         printf("Reajuste ganho: %.2f\n",incriment);
-        printf("Em percentual: %.0f %%",readjustment_rate);
+        printf("Em percentual: %.0f %%\n",readjustment_rate);
     }else if(current_salary>2000.00)
     {
         float readjustment_rate=4;
@@ -47,7 +47,7 @@ int main()
 
         printf("Novo salario: %.2f\n",incrised_salary);
         printf("Reajuste ganho: %.2f\n",incriment);
-        printf("Em percentual: %.0f %%",readjustment_rate);
+        printf("Em percentual: %.0f %%\n",readjustment_rate);
     }
     
     return 0;
