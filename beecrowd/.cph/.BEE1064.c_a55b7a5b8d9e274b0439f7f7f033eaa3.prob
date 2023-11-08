@@ -1,0 +1,1 @@
+{"name":"Local: BEE1064","url":"d:\\All_Git\\c_programming\\beecrowd\\BEE1064.c","tests":[{"id":1699449150824,"input":"7\n-5\n6\n-3.4\n4.6\n12","output":"4 valores positivos\n7.4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\All_Git\\c_programming\\beecrowd\\BEE1064.c","group":"local","local":true}
