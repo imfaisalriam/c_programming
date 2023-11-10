@@ -1,0 +1,1 @@
+{"name":"Local: BEE1073","url":"d:\\All_Git\\c_programming\\beecrowd\\BEE1073.c","tests":[{"id":1699467438279,"input":"6","output":"2^2 = 4\n4^2 = 16\n6^2 = 36"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\All_Git\\c_programming\\beecrowd\\BEE1073.c","group":"local","local":true}
