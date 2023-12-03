@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <math.h>
-#include <string.h>
 int main()
 {
     int i = 0, x = 7, y = 7, z[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
@@ -13,5 +11,4 @@ int main()
         printf("z[%d]=%d\n", i, z[i]);
     }
     return 0;
-}
 }
