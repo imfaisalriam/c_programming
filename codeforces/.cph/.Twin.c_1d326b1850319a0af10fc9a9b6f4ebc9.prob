@@ -1,0 +1,1 @@
+{"name":"Local: Twin","url":"d:\\All_Git\\c_programming\\codeforces\\Twin.c","tests":[{"id":1702580476045,"input":"2\n3 3","output":"2"},{"id":1702580873839,"input":"3\n2 1 2","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\All_Git\\c_programming\\codeforces\\Twin.c","group":"local","local":true}

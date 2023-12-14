@@ -1,0 +1,1 @@
+{"name":"Local: george","url":"d:\\All_Git\\c_programming\\codeforces\\george.c","tests":[{"id":1702576705186,"input":"3\n1 1\n2 2\n3 3","output":"0"},{"id":1702576721597,"input":"3\n1 10\n0 10\n10 10","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\All_Git\\c_programming\\codeforces\\george.c","group":"local","local":true}
